@@ -1,13 +1,18 @@
 {
   "name": "dublin-bus-electron",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A desktop UI for Dublin Bus times.",
   "main": "lib/main.js",
   "scripts": {
     "lint": "eslint .",
     "start": "electron .",
     "build": "npm run lint && npm run build:dist",
-    "build:dist": "electron-packager ./ DublinBus --all --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico"
+    "build:win": "electron-packager ./ DublinBus --platform=win32 --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
+    "build:linux": "electron-packager ./ DublinBus --platform=linux --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
+    "build:mac": "electron-packager ./ DublinBus --platform=darwin --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico"
+  },
+  "bin": {
+    "dublin-bus-electron": "npm start"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -22,12 +27,13 @@
     "eslint": "^3.19.0",
     "eslint-config-axway-base": "^1.0.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-mocha": "^4.9.0",
+    "eslint-plugin-mocha": "^4.9.0"
+  },
+  "dependencies": {
+    "electron-log": "^2.2.3",
     "jimp": "^0.2.27",
     "moment": "^2.18.1",
     "node-notifier": "^5.1.2",
     "request": "^2.81.0"
-  },
-  "dependencies": {
   }
 }
