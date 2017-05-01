@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "start": "electron .",
     "build": "npm run lint && npm run build:dist",
+    "build:dist": "electron-packager ./ DublinBus --all --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
     "build:win": "electron-packager ./ DublinBus --platform=win32 --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
     "build:linux": "electron-packager ./ DublinBus --platform=linux --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
     "build:mac": "electron-packager ./ DublinBus --platform=darwin --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico"
