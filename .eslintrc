@@ -1,0 +1,6 @@
+{
+  "extends": "axway-base",
+  "rules": {
+    "object-shorthand": "off"
+  }
+}
