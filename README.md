@@ -6,9 +6,7 @@ This is a UI for the dublin bus API. Shows the time until the next bus, and also
 
 ## Releases
 
-The latest releases are available here:
-
-TODO
+The latest releases are available [here](https://github.com/alasdairhurst/dublin-bus-electron/releases)
 
 ## To Use
 
