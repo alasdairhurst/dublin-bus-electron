@@ -1,6 +1,6 @@
 {
   "name": "dublin-bus-electron",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A desktop UI for Dublin Bus times.",
   "main": "lib/main.js",
   "scripts": {
@@ -10,9 +10,6 @@
     "build:win": "electron-packager ./ DublinBus --platform=win32 --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
     "build:linux": "electron-packager ./ DublinBus --platform=linux --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico",
     "build:mac": "electron-packager ./ DublinBus --platform=darwin --out ./dist --overwrite --icon=./lib/resources/DublinBusIcon.ico"
-  },
-  "bin": {
-    "dublin-bus-electron": "npm start"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
