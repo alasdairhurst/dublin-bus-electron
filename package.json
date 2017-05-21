@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "electron-log": "^2.2.3",
+    "electron-settings": "^3.0.14",
     "jimp": "^0.2.27",
     "moment": "^2.18.1",
     "node-notifier": "^5.1.2",
